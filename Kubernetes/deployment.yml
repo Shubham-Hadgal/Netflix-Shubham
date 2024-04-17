@@ -1,21 +1,21 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: netflix-app
+  name: netflix-app-shubham
   labels:
-    app: netflix-app
+    app: netflix-app-shubham
 spec:
   replicas: 2
   selector:
     matchLabels:
-      app: netflix-app
+      app: netflix-app-shubham
   template:
     metadata:
       labels:
-        app: netflix-app
+        app: netflix-app-shubham
     spec:
       containers:
-      - name: netflix-app
-        image: nasi101/netflix:latest
+      - name: netflix-app-shubham
+        image: shubhambct/netflix:latest
         ports:
         - containerPort: 80
