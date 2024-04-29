@@ -17,6 +17,9 @@ spec:
       containers:
       - name: netflix-app-shubham
         image: shubhambct/netflix:latest
+        env:
+        - name: DEMO_GREETING
+          value: "Hello from the environment"
         ports:
         - containerPort: 80
 #
