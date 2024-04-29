@@ -5,7 +5,7 @@ metadata:
   labels:
     app: netflix-app-shubham
 spec:
-  replicas: 2
+  replicas: 1
   selector:
     matchLabels:
       app: netflix-app-shubham
